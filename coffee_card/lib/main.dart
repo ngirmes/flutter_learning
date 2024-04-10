@@ -23,7 +23,29 @@ class Home extends StatelessWidget {
   // override just means we're overrding the inherited version of this function
   @override
   Widget build(BuildContext context) {
-    return const Text('Hello Doodleeee!');
+    return Container(
+      color: Colors.orange[100],
+      padding: const EdgeInsets.all(20.0),
+      margin: const EdgeInsets.fromLTRB(10, 40, 0, 0),
+      child: const Text('Hello World', style: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 1.0,
+        color: Color.fromARGB(255, 255, 255, 255),
+        fontStyle: FontStyle.italic,
+        shadows: [
+          Shadow(
+            color: Colors.black,
+            blurRadius: 5,
+            offset: Offset(2, 2)
+          )
+        ],
+        fontFamily: 'IndieFlower'
+      )),
+    );
   }
 }
 
+
+// container
+// --wraps other widgets
